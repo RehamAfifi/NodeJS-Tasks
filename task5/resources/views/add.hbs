@@ -1,0 +1,32 @@
+{{>header}}
+{{>navbar}}
+<section class="container my-4">
+    <h3 class="text-center text-primary my-3">add New customer</h3>
+    <form method="get" action="/addLogic"> 
+        {{!-- post --}}
+        <div class="mb-3">
+            <input name="name" class="form-control" placeholder="Name">
+        </div>
+        <div class="mb-3">
+            <input name="account Number" class="form-control" placeholder="account Number">
+        </div>
+        <div class="mb-3">
+            <input name="Balance" class="form-control" placeholder="Balance">
+        </div>
+        <div class="mb-3">
+            <select name="userType" class="form-control">
+                <option selected disabled>Transaction</option>
+                {{#each Transaction}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+        </div>
+
+            </select>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary">Add user</button>
+        </div>
+
+    </form>
+</section>
+{{>footer}}

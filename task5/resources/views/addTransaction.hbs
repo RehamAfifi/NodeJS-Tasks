@@ -1,0 +1,33 @@
+{{>header}}
+{{>navbar}}
+<section class="container my-4">
+    <h3 class="text-center text-primary my-3">add Transaction</h3>
+    <form method="post" > 
+        {{!-- post --}}
+        <div class="mb-3">
+            <input name="name" type="text" class="form-control" value="{{customer.name}}">
+        </div>
+        <div class="mb-3">
+            <input name="account_Number"  type="number"class="form-control" value="{{customer.account_Number}}">
+        </div>
+        <div class="mb-3">
+            <input name="Balance"  type="number" class="form-control" value="{{customer.Balance}}">
+        </div>
+        <div class="mb-3">
+            <select name="TransactionType" class="form-control">
+                <option selected disabled>TransactionType</option>
+                {{#each TransactionType}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}</div>
+            </select>    
+        </div>
+                     <div class="mb-3">
+                 <input name="value" type="number" class="form-control" placeholder="value">
+             </div>
+        <div class="mb-3">
+            <button class="btn btn-primary">Add</button>
+        </div> </form>
+</section>
+{{>footer}}
+</section>
+{{>footer}}

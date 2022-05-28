@@ -1,0 +1,9 @@
+customers => name, accNum, Balance, transactions => [{transactionType:"add", value:200}]
+
+name, balance => { name:"", balance:"", transactions:[], id:777}
+show, addTranacs=> select(add,withdraw), value
+
+add user
+show all
+single
+add transaction

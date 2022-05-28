@@ -1,0 +1,33 @@
+{{>header}}
+{{>navbar}}
+<section class="container my-4">
+    <h3 class="text-center text-primary my-3">add New Users</h3>
+    <form method="post"> 
+        {{!-- post --}}
+        <div class="mb-3">
+            <input name="name" class="form-control" placeholder="Name" value="{{user.name}}">
+        </div>
+        <div class="mb-3">
+            <input name="email" class="form-control" placeholder="Email" value="{{user.email}}">
+        </div>
+        <div class="mb-3">
+            <input name="phone" class="form-control" placeholder="Phone" value="{{user.phone}}">
+        </div>
+        <div class="mb-3">
+            <input name="age" class="form-control" placeholder="Age" value="{{user.age}}">
+        </div>
+        <div class="mb-3">
+            <select name="userType" class="form-control">
+                <option selected disabled>please choose your type</option>
+                {{#each userTypes}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary">Edit user</button>
+        </div>
+
+    </form>
+</section>
+{{>footer}}

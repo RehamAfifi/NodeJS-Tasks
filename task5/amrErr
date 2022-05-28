@@ -1,0 +1,18 @@
+D:\Nti\test-2\ddo>node as.js
+internal/modules/cjs/loader.js:548
+  throw e;
+  ^
+
+Error: Package exports for 'D:\Nti\test-2\ddo\node_modules\dotenv' do not define a valid '.' target
+←[90m    at resolveExportsTarget (internal/modules/cjs/loader.js:545:13)←[39m
+←[90m    at applyExports (internal/modules/cjs/loader.js:459:14)←[39m
+←[90m    at resolveExports (internal/modules/cjs/loader.js:508:12)←[39m
+←[90m    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)←[39m
+←[90m    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)←[39m
+←[90m    at Function.Module._load (internal/modules/cjs/loader.js:785:27)←[39m
+←[90m    at Module.require (internal/modules/cjs/loader.js:956:19)←[39m
+←[90m    at require (internal/modules/cjs/helpers.js:74:18)←[39m
+    at Object.<anonymous> (D:\Nti\test-2\ddo\as.js:1:1)
+←[90m    at Module._compile (internal/modules/cjs/loader.js:1063:30)←[39m {
+  code: ←[32m'MODULE_NOT_FOUND'←[39m
+}

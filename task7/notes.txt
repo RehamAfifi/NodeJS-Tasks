@@ -1,0 +1,8 @@
+npm init --y
+npm i express dotenv validator hbs
+
+package.json => scripts => start => "nodemon index"
+
+types => [ t1, t2, t3, t4 , ....]
+posts => each post has => id, title, content , type
+add page
